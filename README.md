@@ -21,9 +21,9 @@
 
 Projeto visa usar conhecimentos adquiridos no curso de [JavaScript e TypeScript do básico ao avançado 2020](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) e outros conhecimentos advindos de pesquisas e estudo próprio para criar um site que promova a culinária chinesa. 
 
-<p align="center">
+<!-- <p align="center">
 <img src="./assets/img/site.gif" width="800"  />
-</p>
+</p> -->
 
 ## :stew: Premissa :fried_shrimp: <a name="id02"></a>
 A china possuí uma culinária muito variada, sendo umas das mais antigas e também exóticas do planeta. 
