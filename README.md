@@ -36,8 +36,6 @@ E tudo também se deve a elementos da medicina chinesa, que relaciona a saúde e
 Portanto a culinária chinesa é muito profunda e diversa, contendo uma infinidade de pratos e sabores.
 
 
-[Página do curso](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
-
 ## 📝 Procedimentos de instalação <a name="id03"></a>
 
 Clone este repositório usando o comando:
