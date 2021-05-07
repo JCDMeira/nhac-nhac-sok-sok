@@ -76,3 +76,63 @@ a{
 p{
     margin-bottom: .5rem;
 }
+ul li{
+    list-style: none;
+}
+/* # menu  */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--primary--dark1-color);
+    z-index: 1;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--primary--light2-color);
+}
+.menu-content .logo{
+    display: flex;
+}
+.menu h1{
+    font-size: 6rem;
+    color: var(--primary--dark3-color);
+    display: block;
+    position: relative;
+    padding: 0.5rem;
+}
+.menu h1 a{
+    color: inherit;
+    display: block;
+    position: relative;
+}
+.menu .mandarim{
+    font-family: 'ma shan zheng';
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li a{
+    display: block;
+    padding: 3rem;
+    font-size: 3.5rem;
+    color: var(--primary--dark2-color);
+    position: relative;
+}
+.nhac::after{
+    content: 'Nhac! Nhac!';
+    transition: all 300ms ease-in-out;
+}
+.nhac:hover::after{
+    content: '嗦嗦!嗦嗦!';
+    font-family: 'ma shan zheng';
+    font-size: 3.8rem;
+}
+
+
