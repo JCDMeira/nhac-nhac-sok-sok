@@ -216,7 +216,7 @@ ul li{
     background-color: var(--white-scale-2);
 }
 
-/* # intro section */
+/* # intro-main section */
 .intro{
     position: relative;
     display: grid;
@@ -228,7 +228,7 @@ ul li{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 10rem;  
 }
 .intro-text-content h2{
     font-size: 5rem;
@@ -268,4 +268,41 @@ ul li{
     color: var(--primary--light1-color);
 }
 
+/* # intro-main section */
+.intro2-tittle{
+    text-align: center;
+    width: 100%;
+    margin: 7rem 0 1rem 0;
+    color: var(--primary--dark1-color);
+}
+.intro2-tittle::before{
+    content: 'Que delícia! |';
+    font-family: girassol;
+    margin-left: -18rem;
+    color: var(--primary--dark1-color);
+}
 
+.intro .intro2-p{
+    margin-top: -3rem;
+}
+.intro .intro2-p + .intro2-p{
+    margin-top: 2.5rem;
+}
+.intro-img2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem; 
+}
+.intro-img2 img{
+    margin-top: 10rem;
+    width: 100%;
+}
+.intro .intro-img2 p{
+    margin-top: -13rem;
+    margin-bottom: -5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary--light1-color);
+}
