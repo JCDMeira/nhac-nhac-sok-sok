@@ -101,11 +101,14 @@ ul li{
     padding-bottom: 0;
     background-color: var(--primary--light2-color);
 }
+.menu{
+    background: var(--primary--light2-color);
+}
 .menu-content .logo{
     display: flex;
 }
 .menu h1{
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--primary--dark3-color);
     display: block;
     position: relative;
@@ -129,48 +132,46 @@ ul li{
 .menu ul li a{
     display: block;
     padding: .5rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--primary--dark2-color);
-    width: 35rem;
+    width: 20rem;
 }
 .nhac::after{
     content: 'Nhac! Nhac!';
     font-family: 'Noto Sans JP ', sans-serif;
     position: absolute;
-    width: 20rem;
-    height: 4rem;
     transition: all 300ms ease-in-out;
     text-align: center;
 }
 .nhac:hover::after{
     content: '嗦嗦! 嗦嗦!';
     font-family: 'ma shan zheng';
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     box-shadow: 0 20px 25px -15px var(--primary--base-color);    
+    text-align: center;
 }
 .salgados::after{
     content: 'Pratos salgados';
     font-family: 'Noto Sans JP ', sans-serif;
-    width: 30rem;
-    height: 4rem;
     position: absolute;
+    width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
 }
 .salgados:hover::after{
     content: '咸菜';
     font-family: 'ma shan zheng';
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     text-align: center;
     box-shadow: 0 20px 25px -15px var(--primary--base-color);
+    text-align: center;
 
 }
 .doces::after{
     content: 'Pratos Doces';
     font-family: 'Noto Sans JP ', sans-serif;
-    width: 35rem;
-    height: 4rem;
     position: absolute;
+    width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
     
@@ -178,15 +179,15 @@ ul li{
 .doces:hover::after{
     content: '甜菜';
     font-family: 'ma shan zheng';
-    font-size: 3.7rem;
+    font-size: 3.5rem;
+    text-align: center;
     box-shadow: 0 20px 25px -15px var(--primary--base-color);
 }
 .enviar::after{
     content: 'Enviar prato';
     font-family: 'Noto Sans JP ', sans-serif;
-    width: 35rem;
-    height: 4rem;
     position: absolute;
+    width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
     
@@ -194,8 +195,9 @@ ul li{
 .enviar:hover::after{
     content: '送菜';
     font-family: 'ma shan zheng';
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     box-shadow: 0 20px 25px -15px var(--primary--base-color);
+    text-align: center;
 }
 
 /* # Variáveis */
@@ -233,9 +235,10 @@ ul li{
 }
 .intro-img img{
     margin-top: 10rem;
-    height: 55rem;
+    width: 100%;
 }
 .nhac-tittle{
+    margin-top: 16rem;
     font-family: monoton, sans-serif;
     transform: rotate(-10deg);
     margin-left: -20rem;
@@ -258,7 +261,7 @@ ul li{
     margin-left: 25rem;
 }
 .intro p{
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 5rem;
     font-size: 2rem;
     text-align: center;
