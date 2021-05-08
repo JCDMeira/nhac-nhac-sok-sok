@@ -74,10 +74,14 @@ a{
     text-decoration: none;
 }
 p{
+    font-family: 'Noto Sans JP', sans-serif ;
     margin-bottom: .5rem;
 }
 ul li{
     list-style: none;
+}
+.menu-spacing{
+    height: 6.5rem;
 }
 /* # menu  */
 .menu{
@@ -112,7 +116,7 @@ ul li{
     display: block;
     position: relative;
 }
-.menu .mandarim{
+.mandarim{
     font-family: 'ma shan zheng';
 }
 .menu ul{
@@ -198,8 +202,67 @@ ul li{
 .section{
     min-height: 100vh;
 }
-.main{
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+.main-bg{
     background-color: var(--primary--light3-color);
+}
+.secondary-bg{
+    background-color: var(--white-scale-2);
+}
+
+/* # intro section */
+.intro{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--gap);
+}
+.intro-tittle, .intro-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.intro-text-content h2{
+    font-size: 5rem;
+}
+.intro-img img{
+    margin-top: 10rem;
+    height: 55rem;
+}
+.nhac-tittle{
+    font-family: monoton, sans-serif;
+    transform: rotate(-10deg);
+    margin-left: -20rem;
+    color: var(--primary--base-color);
+
+}
+.intro-tittle  h2 + h2{
+    margin-top: -8rem;
+    margin-left: 25rem;
+}
+.intro-tittle .mandarim{
+    font-size: 8rem;
+    margin-left: -20rem;
+    margin-top: -4rem;
+    transform: rotate(-10deg);
+    color: var(--primary--dark1-color);
+}
+.intro-tittle .mandarim + .mandarim{
+    margin-top: -8rem;
+    margin-left: 25rem;
+}
+.intro p{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary--light1-color);
 }
 
 
