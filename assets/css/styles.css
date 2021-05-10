@@ -314,6 +314,16 @@ ul li{
     text-align: center;
     margin-top: 1rem;
 }
+.salgados-sec h3{
+    color: var(--primary--dark2-color);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.salgados-sec h3 a{
+    color: inherit;
+}
 .grid-salgados{
     display: grid;
     gap: var(--gap);
@@ -351,6 +361,7 @@ ul li{
 }
 
 .card-prato img{
+    width: 40rem;
     transition: all 300ms ease-in-out;
 }
 .card-prato img:hover{
@@ -362,19 +373,56 @@ ul li{
     justify-content: space-between;
     align-items: center;
 }
-/* .cinco{
-    display: flex;
-    flex-direction: column;
-} */
-
 .card-prato .descricao p{
     text-align: center;
-    margin: 0 2rem;
+    margin: 0 1rem;
+    color: var(--white-scale-2);
+}
+.card-prato .descricao p::first-letter{
+    color: var(--black-scale-1);
+}
+.cinco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--white-scale-base);
+}
+.cinco .img-salgados{
+    overflow: hidden;
+    align-items: center;
+
+}
+.cinco img{
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+.cinco img:hover{
+    transform: translate(3%, 3%) scale(1.2) rotate(5deg);
+}
+.cinco .descricao{
+    padding: 2rem;
+}
+.cinco .descricao > div{
+    display: flex;
+    margin-left: 2rem;
+}
+.cinco .descricao > div p{
+    margin: 2rem;
+    color: var(--white-scale-2);
+}
+.cinco .descricao p::first-letter{
+    color: var(--black-scale-1);
+}
+.cinco .descricao h3{
+    font-size: 4rem;
+}
+.cinco .descricao p{
+    text-align: center;
+    color: var(--black-scale-2);
+}
+.card-prato, .cinco{
+    border: 1px solid var(--primary--light3-color);
+    box-shadow: 2px 2px 5px 1px var(--primary--light1-color);
 }
 
-.salgados-sec h3{
-    color: var(--primary--dark2-color);
-    font-size: 2rem;
-    text-align: center;
-}
+
 
