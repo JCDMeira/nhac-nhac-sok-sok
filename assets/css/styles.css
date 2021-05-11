@@ -1,4 +1,4 @@
-/* # variáveis CSS */
+/* @ variáveis CSS */
 
 :root{
     --primary--base-color: #FF6347;
@@ -29,7 +29,9 @@
 
     --gap: 3rem
 }
-/* # Elementos  */
+
+/* @ Elementos  */
+
 *{
     margin: 0;
     padding: 0;
@@ -83,7 +85,9 @@ ul li{
 .menu-spacing{
     height: 6.5rem;
 }
-/* # menu  */
+
+/* @ menu  */
+
 .menu{
     position: fixed;
     top: 0;
@@ -200,7 +204,8 @@ ul li{
     text-align: center;
 }
 
-/* # Variáveis */
+/* @ Variáveis */
+
 .section{
     min-height: 100vh;
 }
@@ -216,7 +221,8 @@ ul li{
     background-color: var(--white-scale-1);
 }
 
-/* # intro-main section */
+/* @ intro-main section */
+
 .intro{
     position: relative;
     display: grid;
@@ -268,7 +274,8 @@ ul li{
     color: var(--primary--light1-color);
 }
 
-/* # intro-main section */
+/* @ intro-main section */
+
 .intro2-tittle{
     text-align: center;
     width: 100%;
@@ -307,24 +314,31 @@ ul li{
     color: var(--primary--light1-color);
 }
 
-/* # pratos salgados*/
-.salgados-sec h2{
+
+/* @ pratos salgados*/
+
+.salgados-sec h2, .doces-sec h2{
     color: var(--primary--dark2-color);
     font-size: 4rem;
     text-align: center;
     margin-top: 1rem;
 }
-.salgados-sec h3{
+.salgados-sec h3, .doces-sec h3{
     color: var(--primary--dark2-color);
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
 }
 
-.salgados-sec h3 a{
+.salgados-sec h3 a, .doces-sec h3 a{
     color: inherit;
 }
-.grid-salgados{
+.salgados-sec h3 a:hover, .doces-sec h3 a:hover{
+    color: var(--primary--base-color);
+    font-size: 2.05rem;
+}
+
+.grid-salgados, .grid-doces{
     display: grid;
     gap: var(--gap);
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -334,26 +348,26 @@ ul li{
     'card5 card5 card5 card5'
     ;
 }
-.grid-salgados .um{
+.grid-salgados .um, .grid-doces .um{
     grid-area: card1;
 }
-.grid-salgados .dois{
+.grid-salgados .dois, .grid-doces .doies{
     grid-area: card2;
 }
-.grid-salgados .tres{
+.grid-salgados .tres, .grid-doces .tres{
     grid-area: card3;
 }
-.grid-salgados .quatro{
+.grid-salgados .quatro, .grid-doces .quatro{
     grid-area: card4;
 }
-.grid-salgados .cinco{
+.grid-salgados .cinco, .grid-doces .cinco{
     grid-area: card5;
 } 
 
 .card-prato{
     background: var(--white-scale-base);
 }
-.card-prato .img-salgados{
+.card-prato .img-salgados,.card-prato .img-doces {
     width: 100%;
     max-width: 26rem;
     overflow: hidden;
@@ -386,7 +400,7 @@ ul li{
     grid-template-columns: 1fr 1fr;
     background: var(--white-scale-base);
 }
-.cinco .img-salgados{
+.cinco .img-salgados, .cinco .img-doces{
     overflow: hidden;
     align-items: center;
 
@@ -415,6 +429,10 @@ ul li{
 .cinco .descricao h3{
     font-size: 4rem;
 }
+.salgados-sec .cinco h3 a:hover, .doces-sec .cinco h3 a:hover{
+    color: var(--primary--base-color);
+    font-size: 4.05rem;
+}
 .cinco .descricao p{
     text-align: center;
     color: var(--black-scale-2);
@@ -424,5 +442,21 @@ ul li{
     box-shadow: 2px 2px 5px 1px var(--primary--light1-color);
 }
 
+/* @ pratos doces*/
 
-
+.grid-doces{
+    grid-template-areas: 
+    'card1 card5 card5 card3'
+    'card2 card5 card5 card4'
+    ;
+}
+.grid-doces .cinco{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    background: var(--white-scale-base);
+}
+.grid-doces .cinco img{
+    height: 35rem;
+    transition: all 300ms ease-in-out;
+}
