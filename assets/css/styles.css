@@ -403,7 +403,6 @@ ul li{
 .cinco .img-salgados, .cinco .img-doces{
     overflow: hidden;
     align-items: center;
-
 }
 .cinco img{
     height: 100%;
@@ -445,6 +444,7 @@ ul li{
 /* @ pratos doces*/
 
 .grid-doces{
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     'card1 card5 card5 card3'
     'card2 card5 card5 card4'
@@ -453,10 +453,20 @@ ul li{
 .grid-doces .cinco{
     display: grid;
     grid-template-columns: 1fr;
-    
     background: var(--white-scale-base);
+    
+}
+.grid-doces .cinco .img-doces{
+    max-height: 35rem;
+    
 }
 .grid-doces .cinco img{
     height: 35rem;
+    margin-bottom: -5rem;
     transition: all 300ms ease-in-out;
+}
+
+.grid-doces .cinco .descricao  h3{
+    margin-top: -3rem;
+    margin-bottom: -1rem;
 }
