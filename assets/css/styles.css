@@ -631,4 +631,88 @@ body .full-width{
         grid-template-columns: 1fr;
     }
 
+    .menu{
+        display: none;
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content{
+        height: 100vh;
+    }
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .close-menu:checked~.menu{
+        display: block; 
+    }
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+
+    .menu-content ul li a{
+        color: var(--primary--light2-color);
+    }
+
+    .nhac::after{
+        left: 45%;
+        color: var(--primary--dark2-color);
+    }
+    .nhac:hover::after{
+        content: 'Nhac! Nhac!';
+        font-family: 'Noto Sans JP ', sans-serif;
+        font-size: 2.5rem;
+    }
+    .salgados::after{
+        left: 42.3%;
+        color: var(--primary--dark2-color);
+    }
+    .salgados:hover::after{
+        content: 'Pratos salgados';
+        font-family: 'Noto Sans JP ', sans-serif;
+        font-size: 2.5rem;
+    }
+    .doces::after{
+        top: 60%;
+        left: 42.3%;
+        color: var(--primary--dark2-color);
+    }
+    .doces:hover::after{
+        content: 'Pratos Doces';
+        font-family: 'Noto Sans JP ', sans-serif;
+        font-size: 2.5rem;
+        
+    }
+    .enviar::after{
+        top: 65%;
+        left: 42.3%;
+        color: var(--primary--dark2-color);
+    }
+    .enviar:hover::after{
+        content: 'Enviar prato';
+        font-family: 'Noto Sans JP ', sans-serif;
+        font-size: 2.5rem;
+    }
 }

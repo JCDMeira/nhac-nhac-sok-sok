@@ -27,17 +27,19 @@
 </head>
 
 <body>
+    <input type="checkbox" role="button" aria-label="close menu" id="close-menu" class="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <Aside class="menu ">
         <div class="sustein">
             <div class="menu-content main-content ">
 
                 <div class="logo">
-                    <h1><a href="#logo">Nhac!</a></h1>
-                    <h1 class="mandarim"><a href="#logo">嗦嗦!</a></h1>
+                    <h1 onclick="getElementById('close-menu').checked = false;"><a href="#logo">Nhac!</a></h1>
+                    <h1 onclick="getElementById('close-menu').checked = false;" class="mandarim"><a href="#logo">嗦嗦!</a></h1>
                 </div>
 
                 <nav>
-                    <ul>
+                    <ul onclick="getElementById('close-menu').checked = false;">
                         <!-- <div class="teste"><a href="#intro" class="nhac"></a></div>
                     <div class="teste"><a href="#salgados" class="nhac"></a></div>
                     <div class="teste"><a href="#doces" class="nhac"></a></div>
