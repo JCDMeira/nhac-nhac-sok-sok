@@ -377,7 +377,7 @@ ul li{
 }
 
 .card-prato img{
-    max-width: 40rem;
+    max-height: 20rem;
     transition: all 300ms ease-in-out;
 }
 .card-prato img:hover{
@@ -461,10 +461,12 @@ ul li{
 }
 .grid-doces .cinco .img-doces{
     max-height: 35rem;
-    
+    max-width: 60rem;
 }
 .grid-doces .cinco img{
     height: 35rem;
+    max-width: 60rem;
+
     margin-bottom: -5rem;
     transition: all 300ms ease-in-out;
 }
@@ -714,5 +716,16 @@ body .full-width{
         content: 'Enviar prato';
         font-family: 'Noto Sans JP ', sans-serif;
         font-size: 2.5rem;
+    }
+    .cinco .img-doces{
+        max-height: 35rem;
+        max-width: 60rem;
+    }
+    .cinco img{
+        height: 35rem;
+        width: 50rem;
+    
+        margin-bottom: -5rem;
+        transition: all 300ms ease-in-out;
     }
 }
