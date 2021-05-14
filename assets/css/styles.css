@@ -612,4 +612,23 @@ body .full-width{
     font-weight: bold;
     border: 0.1rem solid var(--primary-color);
 }
+/* @Media */
+@media(max-width: 980px){
+    .intro {
+        grid-template-columns: 1fr;
+    }
+    .grid-salgados, .grid-doces{
+        grid-template-areas: 
+        'card1 card2 '
+        'card3 card4'
+        'card5 card5'
+        ;
+    }
+    .img-salgados, .img-doces{
+        margin: 0 auto;
+    }
+    .cinco{
+        grid-template-columns: 1fr;
+    }
 
+}
