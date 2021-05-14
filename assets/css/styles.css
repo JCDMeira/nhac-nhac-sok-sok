@@ -576,3 +576,40 @@ body .full-width{
     box-shadow: 2px 2px 10px 5px var(--primary--light1-color);
 }
 
+/* @ Footer */
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary--light2-color);
+}
+.footer a{
+    color: var(--primary--base-color);
+    cursor: pointer;
+}
+.footer a:hover{
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+.close-menu{
+    display: none;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+    background: var(--primary--dark2-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary--light3-color);
+    font-weight: bold;
+    border: 0.1rem solid var(--primary-color);
+}
+
