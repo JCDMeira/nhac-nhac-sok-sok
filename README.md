@@ -33,6 +33,8 @@ O modelo busca até o momento ser um treino sobre front-end com uso de HTML5 e C
 <img src="./assets/gifs/gif-nhac-nhac.gif" width="800"  />
 </p>
 
+O 嗦嗦 (sok4 sok2) é uma onomatopeia emprestada do cantonês, devido a não ter sido encontrado uma representação melhor em mandarim para a onomatopeia nhac nhac, sua equivalente em português (sentido próximo).
+
 ## :heavy_plus_sign: Funções e conceitos adicionais ao modelo base  <a name="id02"></a>
 
 ### :cinema: Animação de menu  <a name="id02.1"></a>
