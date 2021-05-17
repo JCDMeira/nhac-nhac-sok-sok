@@ -617,9 +617,28 @@ body .full-width{
     border: 0.1rem solid var(--primary-color);
 }
 /* @Media */
+@media(max-width: 1166px){
+    .grid-salgados{
+        grid-template-areas: 
+        'card1 card2' 
+        'card3 card4'
+        'card5 card5 '
+        ;
+    }
+    .img-salgados{
+        margin: 0 auto;
+    }
+}
 @media(max-width: 980px){
     .intro {
         grid-template-columns: 1fr;
+    }
+    .intro2-tittle{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .intro2-tittle::before{
+        margin-left: 0rem;
     }
     .grid-salgados, .grid-doces{
         grid-template-areas: 
@@ -760,6 +779,9 @@ body .full-width{
         margin-top: -6rem;
         margin-left: 10rem;
     }
+    .intro p{
+        margin-left: 0;
+    }
 
     .grid-salgados, .grid-doces{
         grid-template-areas: 
@@ -779,5 +801,13 @@ body .full-width{
 .cinco img{
     max-height: 20rem;
     transition: all 300ms ease-in-out;
+}
+.descrisao-form .mandarim{
+    line-height: 5rem;
+    font-size: 4rem;
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    text-shadow: 0.3rem 0.3rem 0.08rem var(--primary--base-color)
 }
 }
