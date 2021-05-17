@@ -729,3 +729,55 @@ body .full-width{
         transition: all 300ms ease-in-out;
     }
 }
+
+@media(max-width: 600px){
+
+    .intro-img img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .nhac-tittle{
+        margin-top: 1rem;
+        font-family: monoton, sans-serif;
+        transform: rotate(-10deg);
+        margin-left: -15rem;
+        color: var(--primary--base-color);
+        font-size: 3rem;
+    
+    }
+    .intro-tittle  h2 + h2{
+        margin-top: -8rem;
+        margin-left: 15rem;
+    }
+    .intro-tittle .mandarim{
+        font-size: 4rem;
+        margin-left: -12rem;
+        margin-top: -4rem;
+        transform: rotate(-10deg);
+        color: var(--primary--dark1-color);
+    }
+    .intro-tittle .mandarim + .mandarim{
+        margin-top: -6rem;
+        margin-left: 10rem;
+    }
+
+    .grid-salgados, .grid-doces{
+        grid-template-areas: 
+        'card1' 
+        'card2 '
+        'card3'
+        'card4'
+        'card5'
+        ;
+    }
+.cinco .img-salgados,.cinco .img-doces {
+    width: 100%;
+    max-width: 26rem;
+    overflow: hidden;
+
+}
+.cinco img{
+    max-height: 20rem;
+    transition: all 300ms ease-in-out;
+}
+}
