@@ -135,7 +135,7 @@ ul li{
     display: block;
     padding: .5rem;
     font-size: 2.5rem;
-    color: var(--primary--dark2-color);
+    color: var(--primary--light2-color);
     width: 20rem;
 }
 .nhac::after{
@@ -144,6 +144,7 @@ ul li{
     position: absolute;
     transition: all 300ms ease-in-out;
     text-align: center;
+    color: var(--primary--dark2-color);
 }
 .nhac:hover::after{
     content: '嗦嗦! 嗦嗦!';
@@ -159,6 +160,7 @@ ul li{
     width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
+    color: var(--primary--dark2-color);
 }
 .salgados:hover::after{
     content: '咸菜';
@@ -176,7 +178,7 @@ ul li{
     width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
-    
+    color: var(--primary--dark2-color);
 }
 .doces:hover::after{
     content: '甜菜';
@@ -192,7 +194,7 @@ ul li{
     width: 20rem;
     text-align: center;
     transition: all 300ms ease-in-out;
-    
+    color: var(--primary--dark2-color);
 }
 .enviar:hover::after{
     content: '送菜';
@@ -615,9 +617,28 @@ body .full-width{
     border: 0.1rem solid var(--primary-color);
 }
 /* @Media */
+@media(max-width: 1166px){
+    .grid-salgados{
+        grid-template-areas: 
+        'card1 card2' 
+        'card3 card4'
+        'card5 card5 '
+        ;
+    }
+    .img-salgados{
+        margin: 0 auto;
+    }
+}
 @media(max-width: 980px){
     .intro {
         grid-template-columns: 1fr;
+    }
+    .intro2-tittle{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .intro2-tittle::before{
+        margin-left: 0rem;
     }
     .grid-salgados, .grid-doces{
         grid-template-areas: 
@@ -679,7 +700,7 @@ body .full-width{
     }
 
     .nhac::after{
-        left: 45%;
+        margin-left: -72px;
         color: var(--primary--dark2-color);
     }
     .nhac:hover::after{
@@ -688,7 +709,7 @@ body .full-width{
         font-size: 2.5rem;
     }
     .salgados::after{
-        left: 42.3%;
+        margin-left: -108px;
         color: var(--primary--dark2-color);
     }
     .salgados:hover::after{
@@ -697,8 +718,7 @@ body .full-width{
         font-size: 2.5rem;
     }
     .doces::after{
-        top: 60%;
-        left: 42.3%;
+        margin-left: -104px;
         color: var(--primary--dark2-color);
     }
     .doces:hover::after{
@@ -708,8 +728,7 @@ body .full-width{
         
     }
     .enviar::after{
-        top: 65%;
-        left: 42.3%;
+        margin-left: -104px;
         color: var(--primary--dark2-color);
     }
     .enviar:hover::after{
@@ -760,6 +779,9 @@ body .full-width{
         margin-top: -6rem;
         margin-left: 10rem;
     }
+    .intro p{
+        margin-left: 0;
+    }
 
     .grid-salgados, .grid-doces{
         grid-template-areas: 
@@ -779,5 +801,13 @@ body .full-width{
 .cinco img{
     max-height: 20rem;
     transition: all 300ms ease-in-out;
+}
+.descrisao-form .mandarim{
+    line-height: 5rem;
+    font-size: 4rem;
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    text-shadow: 0.3rem 0.3rem 0.08rem var(--primary--base-color)
 }
 }
